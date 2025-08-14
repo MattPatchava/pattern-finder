@@ -22,7 +22,7 @@ struct Args {
 #[derive(ValueEnum, Clone)]
 enum HashingProtocol {
     Sha256,
-    Md5,
+    // Md5,
 }
 
 impl std::fmt::Display for HashingProtocol {
@@ -32,7 +32,7 @@ impl std::fmt::Display for HashingProtocol {
             "{}",
             match self {
                 HashingProtocol::Sha256 => "sha256",
-                HashingProtocol::Md5 => "md5",
+                // HashingProtocol::Md5 => "md5",
             }
         )
     }
