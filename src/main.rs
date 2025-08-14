@@ -4,6 +4,10 @@ mod miner;
 mod utils;
 
 #[derive(Parser)]
+#[command(
+    about = "A parallelised brute force miner for finding inputs that hash to a user-specified digest pattern.",
+    version
+)]
 struct Args {
     #[arg(long)]
     pattern: String,
